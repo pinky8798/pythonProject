@@ -1,4 +1,4 @@
-def emoji(msg):
+def emoji_convertor(msg):
     words = msg.split(" ")
     out = ''
     emojis = {"love": "❤️", "you": "🫵🏼", "ais": "🍦", ":)": "😁", "Amma": "👱🏻‍"}
@@ -7,4 +7,4 @@ def emoji(msg):
     return out
 
 
-print(emoji("Hi i love you Amma"))
+print(emoji_convertor("Hi i love you Amma"))
