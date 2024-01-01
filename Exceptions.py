@@ -3,8 +3,12 @@
 try :
     age=int(input('Enter Age: '))
     income=20000
-    risk=income/age
-    print(f"Age : {age}")
+    if age>=0:
+        risk = income / age
+        print(f"Age : {age}")
+    else:
+        print("Age can't be negative")
+
 except ValueError:
     print("Invalid Input")
 except ZeroDivisionError:
